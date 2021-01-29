@@ -407,7 +407,6 @@
             <div class="container">
                 <div>
                     <a class="basement-logo" href="/"><span class="logo-dif">Web</span>Studio</a>
-
                     <address class="address-group">
                         <p class="basement-address interval">г. Киев, пр-т Леси Украинки, 26</p>
                         <a class="basement-contact interval" href="mailto:info@devstudio.com"
@@ -443,8 +442,30 @@
                         </a>
                     </div>
                 </div>
+                <div class="form-wraper">
+                    <b class="form-title">Подпишитесь на рассылку</b>
+                    <form class="form-field">
+                        <label>
+                            <input
+                                class="form-input"
+                                type="email"
+                                name="mail"
+                                placeholder=" "
+                                required
+                            />
+                            <span class="form-label">E-mail</span>
+                        </label>
+                        <button class="btn-submit" type="submit">
+                            Подписаться
+                            <svg class="icon-plane">
+                                <use href="./images/first-sprite.svg#icon-papep-plane"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
+        <!--modal window-->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-close" data-modal-close>
@@ -452,6 +473,43 @@
                         <use href="./images/first-sprite.svg#icon-vector"></use>
                     </svg>
                 </button>
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <form class="modal-form">
+                    <label class="modal-label">Имя
+                        <input class="modal-input" type="text" name="name" required />
+                        <svg class="modal-icon">
+                            <use href="./images/first-sprite.svg#icon-person-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-label"
+                        >Телефон
+                        <input class="modal-input" type="tel" name="tel" required />
+                        <svg class="modal-icon">
+                            <use href="./images/first-sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-label"
+                        >Почта
+                        <input class="modal-input" type="email" name="mail" />
+                        <svg class="modal-icon">
+                            <use href="./images/first-sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-label"
+                        >Коментарий
+                        <textarea
+                            class="modal-coment-input"
+                            name="coment"
+                            placeholder="Введите текст"
+                        ></textarea>
+                    </label>
+                    <label class="agreement-label">
+                        <input class="modal-agreement" type="checkbox" name="agreement" required />
+                        Соглашаюсь с рассылкой и принимаю
+                        <a class="conditions" href="#">Условия договора</a>
+                    </label>
+                    <button class="modal-btn" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
