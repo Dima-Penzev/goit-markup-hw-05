@@ -445,16 +445,13 @@
                 <div class="form-wraper">
                     <b class="form-title">Подпишитесь на рассылку</b>
                     <form class="form-field">
-                        <label>
-                            <input
-                                class="form-input"
-                                type="email"
-                                name="mail"
-                                placeholder=" "
-                                required
-                            />
-                            <span class="form-label">E-mail</span>
-                        </label>
+                        <input
+                            class="form-input"
+                            type="email"
+                            name="mail"
+                            placeholder="E-mail"
+                            required
+                        />
                         <button class="btn-submit" type="submit">
                             Подписаться
                             <svg class="icon-plane">
@@ -475,7 +472,8 @@
                 </button>
                 <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="modal-form">
-                    <label class="modal-label">Имя
+                    <label class="modal-label"
+                        >Имя
                         <input class="modal-input" type="text" name="name" required />
                         <svg class="modal-icon">
                             <use href="./images/first-sprite.svg#icon-person-black"></use>
@@ -483,7 +481,13 @@
                     </label>
                     <label class="modal-label"
                         >Телефон
-                        <input class="modal-input" type="tel" name="tel" required />
+                        <input
+                            class="modal-input"
+                            type="tel"
+                            name="tel"
+                            required
+                            pattern="\+[0-9]{11}"
+                        />
                         <svg class="modal-icon">
                             <use href="./images/first-sprite.svg#icon-phone-black"></use>
                         </svg>
@@ -504,7 +508,14 @@
                         ></textarea>
                     </label>
                     <label class="agreement-label">
-                        <input class="modal-agreement" type="checkbox" name="agreement" required />
+                        <input
+                            class="modal-agreement"
+                            type="checkbox"
+                            name="agreement"
+                            value="contract"
+                            required
+                        />
+                        <span class="checkbox-icon"></span>
                         Соглашаюсь с рассылкой и принимаю
                         <a class="conditions" href="#">Условия договора</a>
                     </label>
